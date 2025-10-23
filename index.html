@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .karta {
+            width: 300px;
+            display: inline-block;
+            margin: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .karta-obraz {
+          width: 300px;
+          height: 300px;
+          margin: 10px auto;
+          display: block;
+          border-radius: 50%;
+          border: 3px solid black;
+        }
+        @media (max-width: 768px){
+   .nav-bar {
+   flex-direction: column;
+   height: auto;
+   }
+   .nav-bar ul {
+   width: 100%;
+   }
+   .nav-item {
+   line-height: 40px;
+   text-align: center;
+   width: 100%;
+   border-bottom: 1px solid #555;
+   padding: 10px 0;
+   }
+}
+
+        h1 {
+            width: 80%;
+            margin: 30px auto;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .nav-bar {
+            background-color: #333;
+            list-style: none;
+            padding: 0;
+            margin:0;
+            height: 80px;
+            border-bottom: 5px solid #007bff;
+            display: flex;
+        }
+
+        .nav-item {
+            padding: 0 15px;
+            color: white;
+            text-decoration: none;
+            display: block;
+            line-height: 80px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .karta-guzik {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            bacground-color: #0056b3;
+            padding: 10px 15px;
+            margin: 15px 0 0 0;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 1s;
+        }
+        
+        .karta-guzik:hover {
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        
+        .hero {
+    height: 400px;
+    background-image: url('https://picsum.photos/1200/400?random=4');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+.hero-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #ffc107;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+}
+
+.hero-button:hover {
+    background-color: #e0a800;
+}
+
+.korzysci-sekcja {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.korzysci-kontener {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.korzysci-element {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 4px solid #007bff;
+  transition: transform 0.3s ease-out;
+}
+
+.korzysci-element:hover {
+  transform: translateY(-5px);
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-bar">
+            <a href="#" class="nav-item">Strona Główna</a>
+            <a href="#" class="nav-item">O nas</a>
+            <a href="#" class="nav-item">Usługi</a>
+            <a href="#" class="nav-item">Kontakt</a>
+
+        </ul>
+    </nav>
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Strona informacyjna o grach FPS i innych gatunkach.</h1>
+        <p>Dowiesz się o trzech grach</p>
+        <a href="#" class="hero-button">Rozpocznij teraz</a>
+    </div>
+</section>
+    <section>
+        <div class="karta">
+            <h3>Counter Strike 2</h3>
+                <img src="CS2.jpg" alt="to" class="karta-obraz" 
+            <p>CS2 to skrót od Counter-Strike 2, strzelanki pierwszoosobowej, będącej bezpośrednią kontynuacją popularnego Counter-Strike: Global Offensive (CS:GO). Gra została wydana przez Valve Corporation 27 września 2023 roku i jest dostępna bezpłatnie na platformie Steam</p>
+        </div>
+        <div class="karta">
+            <h3>Fortnite</h3>
+                <img src="Fortnite.jpg" alt="to" class="karta-obraz" 
+            <p>Fortnite to darmowa, wieloosobowa gra online, która oferuje wiele trybów rozgrywki na różnych platformach. Pierwotnie wydana w 2017 roku przez Epic Games, gra ewoluowała z kooperacyjnej strzelanki w niezwykle popularne uniwersum Battle Royale, a z czasem dodano do niej liczne nowe tryby.</p>
+        </div>
+        <div class="karta">
+            <h3>Battlefield 4</h3>
+                <img src="battlefield-4-eme4o.jpg" alt="to" class="karta-obraz" 
+            <p>Battlefield 4 to strzelanka pierwszoosobowa (FPS) stworzona przez Digital Illusions CE (DICE) i wydana przez Electronic Arts w 2013 roku. Akcja gry, której akcja rozgrywa się w 2020 roku, przedstawia globalny konflikt między Stanami Zjednoczonymi, Rosją i Chinami. Tytuł znany jest przede wszystkim z rozbudowanego trybu wieloosobowego, który wciąż cieszy się aktywną społecznością graczy.</p>
+        
+        </div>
+        <div>
+        <section class="korzysci-sekcja">
+  <div class="korzysci-kontener">
+    <article class="korzysci-element">
+      <h3>FPS</h3>
+      <p>Gry FPS to strzelanki pierwszoosobowe (ang. first-person shooter), w których akcja gry jest obserwowana z perspektywy pierwszej osoby, czyli oczami głównego bohatera. W grach tego typu rozgrywka koncentruje się głównie na walce z użyciem broni palnej, a gracz posługuje się myszką i klawiaturą do sterowania postacią w świecie gry. </p>
+    </article>
+    <article class="korzysci-element">
+      <h3>MMO</h3>
+      <p>Gry MMO to Massively Multiplayer Online Game (masowo wieloosobowa gra online) – rodzaj gier komputerowych, w których tysiące graczy może jednocześnie wchodzić w interakcje w jednym, wirtualnym świecie za pośrednictwem internetu. Cechują się dużą społecznością, możliwością współpracy lub rywalizacji oraz trwałym, rozbudowanym światem gry. </p>
+    </article>
+    <article class="korzysci-element">
+      <h3>Szybkość i Wydajność</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iusto at temporibus quidem ipsum modi repellat eaque maxime, adipisci neque aperiam. Cupiditate, maxime ducimus expedita distinctio possimus eos quibusdam quis.</p>
+    </article>
+    <article class="korzysci-element">
+      <h3>Szybkość i Wydajność</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iusto at temporibus quidem ipsum modi repellat eaque maxime, adipisci neque aperiam. Cupiditate, maxime ducimus expedita distinctio possimus eos quibusdam quis.</p>
+    </article>
+  </div>
+</section>
+
+</section>
+    <footer>
+        <p>&copy: 2025 Maszewska Company. Wszelkie prawa zastrzeżone. | Stronę wykonał Jacek 4TA</p>
+    </footer>
+
+</body>
+</html>
